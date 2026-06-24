@@ -19,6 +19,8 @@ from tennis_court_scraper.filter_type import filter_by_type
 from tennis_court_scraper.parse import parse_slots
 from tennis_court_scraper.utils import print_slots, sort_slots
 
+COURTFINDER_MAX_DAYS_AHEAD = 9
+
 
 def _parse_center(value: str) -> tuple[float, float]:
     lat, lng = value.split(",")
@@ -94,6 +96,12 @@ def _build_parser() -> argparse.ArgumentParser:
 async def run() -> None:
     parser = _build_parser()
     args = parser.parse_args()
+    if args.days_ahead > COURTFINDER_MAX_DAYS_AHEAD:
+        print(
+            "Warning: courtfinder.app only provides %s days of data ahead"
+            % COURTFINDER_MAX_DAYS_AHEAD,
+            file=sys.stderr,
+        )
     centers = [_parse_center(c) for c in args.center]
     try:
         html = await fetch_html()
