@@ -1,0 +1,2 @@
+DATE_FORMAT = "%Y-%m-%d"
+MINUTES_PER_HOUR = 60

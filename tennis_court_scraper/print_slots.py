@@ -1,6 +1,7 @@
 from collections import defaultdict
 from datetime import datetime
 
+from tennis_court_scraper.constants import DATE_FORMAT, MINUTES_PER_HOUR
 from tennis_court_scraper.models import Slot
 
 
@@ -14,14 +15,14 @@ def print_slots(slots: list[Slot]) -> None:
     total = 0
     for date_str in sorted(grouped):
         day_slots = grouped[date_str]
-        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        dt = datetime.strptime(date_str, DATE_FORMAT)
         day_name = dt.strftime("%A")
         print(f"\n{date_str} ({day_name})  {len(day_slots)} courts")
         for slot in day_slots:
-            start_h, start_m = divmod(slot.start_minute, 60)
+            start_h, start_m = divmod(slot.start_minute, MINUTES_PER_HOUR)
             end_m = start_m + slot.duration_minutes
-            end_h = start_h + end_m // 60
-            end_m = end_m % 60
+            end_h = start_h + end_m // MINUTES_PER_HOUR
+            end_m = end_m % MINUTES_PER_HOUR
             time_str = f"{start_h:02d}:{start_m:02d}-{end_h:02d}:{end_m:02d}"
             price_str = f"£{slot.price:.2f}" if slot.price is not None else "Free"
             outdoor_str = "outdoor" if slot.outdoor else "indoor"
