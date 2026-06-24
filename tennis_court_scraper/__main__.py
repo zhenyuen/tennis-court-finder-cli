@@ -6,6 +6,7 @@ import sys
 import aiohttp
 
 from tennis_court_scraper.config import (
+    COURTFINDER_MAX_DAYS_AHEAD,
     DEFAULT_CENTERS,
     DEFAULT_DAYS_AHEAD,
     DEFAULT_END_HOUR,
@@ -22,7 +23,6 @@ from tennis_court_scraper.filters import (
 from tennis_court_scraper.parse import parse_slots
 from tennis_court_scraper.utils import print_slots, sort_slots
 
-COURTFINDER_MAX_DAYS_AHEAD = 9
 logger = logging.getLogger(__name__)
 
 
