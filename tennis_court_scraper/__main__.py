@@ -94,6 +94,11 @@ def _build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Indoor courts only",
     )
+    parser.add_argument(
+        "--plain",
+        action="store_true",
+        help="Output plain text without formatting (useful for piping to clipboard)",
+    )
     return parser
 
 
@@ -119,7 +124,7 @@ async def run() -> None:
     slots = filter_by_day_of_week(slots, weekends_only, weekdays_only)
     slots = filter_by_type(slots, args.outdoor, args.indoor)
     slots = sort_slots(slots)
-    print_slots(slots)
+    print_slots(slots, plain=args.plain)
 
 
 def main() -> None:
