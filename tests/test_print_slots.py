@@ -1,5 +1,5 @@
 
-from tennis_court_scraper.print_slots import print_slots
+from tennis_court_scraper.utils import print_slots
 from tennis_court_scraper.models import Slot
 
 

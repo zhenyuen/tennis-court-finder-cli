@@ -1,4 +1,4 @@
-from tennis_court_scraper.sort_slots import sort_slots
+from tennis_court_scraper.utils import sort_slots
 from tennis_court_scraper.models import Slot
 
 

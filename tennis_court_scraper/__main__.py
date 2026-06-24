@@ -17,8 +17,7 @@ from tennis_court_scraper.filter_distance import filter_by_distance
 from tennis_court_scraper.filter_time import filter_by_time
 from tennis_court_scraper.filter_type import filter_by_type
 from tennis_court_scraper.parse import parse_slots
-from tennis_court_scraper.print_slots import print_slots
-from tennis_court_scraper.sort_slots import sort_slots
+from tennis_court_scraper.utils import print_slots, sort_slots
 
 
 def _parse_center(value: str) -> tuple[float, float]:
