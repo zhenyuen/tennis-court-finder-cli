@@ -2,6 +2,8 @@ import argparse
 import asyncio
 import sys
 
+import httpx
+
 from tennis_court_scraper.config import (
     DEFAULT_CENTERS,
     DEFAULT_DAYS_AHEAD,
@@ -96,8 +98,8 @@ async def run() -> None:
     centers = [_parse_center(c) for c in args.center]
     try:
         html = await fetch_html()
-    except Exception as e:
-        print(f"Error fetching data: {e}", file=sys.stderr)
+    except httpx.RequestError as e:
+        print("Error fetching data: %s" % e, file=sys.stderr)
         sys.exit(1)
     slots = parse_slots(html)
     slots = filter_by_distance(slots, centers, args.radius)

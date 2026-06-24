@@ -7,6 +7,7 @@
 - **Keep code simple** — Prioritize readability and minimalism. Avoid over-engineering.
 - **Only use absolute imports** — Always import from the top-level package (e.g., `from tennis_court_scraper.models import Slot`). Never use relative imports (`from .models import Slot`) or inline `sys.path` manipulation.
 - **No magic numbers** — Use named constants. Internal constants prefixed with `_`.
+- **No f-strings in logging** — Use `%` formatting or `.format()` in `print`/log statements. F-strings evaluate eagerly, wasting CPU when the log level is disabled.
 - **Never test private methods** — Private functions (prefixed with `_`) are implementation details. Test only public functions through their public interface.
 - **Prefer composition over inheritance** — Build behavior by composing smaller functions and objects. Avoid class hierarchies and `super()` calls unless necessary.
 - **Type-hint all functions** — Every function and method must have annotated parameters and return types. Use `pyright` to verify.

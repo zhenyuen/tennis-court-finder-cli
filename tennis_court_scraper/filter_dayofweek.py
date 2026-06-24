@@ -2,6 +2,8 @@ from datetime import datetime
 
 from tennis_court_scraper.models import Slot
 
+_WEEKEND_START = 5
+
 
 def filter_by_day_of_week(
     slots: list[Slot],
@@ -13,8 +15,8 @@ def filter_by_day_of_week(
     result: list[Slot] = []
     for slot in slots:
         dow = datetime.strptime(slot.date, "%Y-%m-%d").weekday()
-        is_weekend = dow >= 5
-        is_weekday = dow < 5
+        is_weekend = dow >= _WEEKEND_START
+        is_weekday = dow < _WEEKEND_START
         if (weekends_only and is_weekend) or (weekdays_only and is_weekday):
             result.append(slot)
     return result
