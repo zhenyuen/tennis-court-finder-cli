@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-_VENUES_JSON_PATH = Path(__file__).parent.parent / "assets" / "venues.json"
+_VENUES_JSON_PATH = Path(__file__).parent / "assets" / "venues.json"
 
 
 def load_venues() -> dict[str, dict[str, str | float]]:
