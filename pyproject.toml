@@ -5,7 +5,7 @@ description = "Scrape London tennis court availability from courtfinder.app"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "httpx>=0.28",
+    "aiohttp>=3.9",
     "pydantic>=2.0",
 ]
 

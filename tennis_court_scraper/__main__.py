@@ -2,7 +2,7 @@ import argparse
 import asyncio
 import sys
 
-import httpx
+import aiohttp
 
 from tennis_court_scraper.config import (
     DEFAULT_CENTERS,
@@ -98,7 +98,7 @@ async def run() -> None:
     centers = [_parse_center(c) for c in args.center]
     try:
         html = await fetch_html()
-    except httpx.RequestError as e:
+    except aiohttp.ClientError as e:
         print("Error fetching data: %s" % e, file=sys.stderr)
         sys.exit(1)
     slots = parse_slots(html)
