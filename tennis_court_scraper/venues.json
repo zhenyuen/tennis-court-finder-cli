@@ -1,0 +1,432 @@
+{
+    "ABTS": {
+        "name": "Abbotts Park",
+        "lat": 51.5712,
+        "lng": -0.0068
+    },
+    "ACTN": {
+        "name": "Acton Park",
+        "lat": 51.5081,
+        "lng": -0.26
+    },
+    "ALDB": {
+        "name": "Aldersbrook LTC",
+        "lat": 51.5652,
+        "lng": 0.0244
+    },
+    "APRK": {
+        "name": "Archbishop's Park",
+        "lat": 51.4922,
+        "lng": -0.121
+    },
+    "AVON": {
+        "name": "Avondale Park",
+        "lat": 51.5107,
+        "lng": -0.2124
+    },
+    "BELP": {
+        "name": "Belair Park",
+        "lat": 51.4432,
+        "lng": -0.0908
+    },
+    "BLHE": {
+        "name": "Blackheath Park",
+        "lat": 51.4609,
+        "lng": 0.018
+    },
+    "BRGS": {
+        "name": "Burgess Park",
+        "lat": 51.4816,
+        "lng": -0.0899
+    },
+    "BRIT": {
+        "name": "Britannia Leisure Centre",
+        "lat": 51.5343,
+        "lng": -0.0834
+    },
+    "BRKW": {
+        "name": "Brockwell Park",
+        "lat": 51.4505,
+        "lng": -0.1061
+    },
+    "BRUN": {
+        "name": "Brunswick Park",
+        "lat": 51.6262,
+        "lng": -0.1482
+    },
+    "BTRS": {
+        "name": "Battersea Park",
+        "lat": 51.4792,
+        "lng": -0.1571
+    },
+    "CARL": {
+        "name": "Carlisle Park",
+        "lat": 51.4207,
+        "lng": -0.3671
+    },
+    "CATF": {
+        "name": "Catford Bridge",
+        "lat": 51.4607,
+        "lng": -0.0308
+    },
+    "CHLD": {
+        "name": "Childs Hill Park",
+        "lat": 51.5672,
+        "lng": -0.2007
+    },
+    "CHSW": {
+        "name": "Chiswick Park",
+        "lat": 51.4945,
+        "lng": -0.2677
+    },
+    "CLIP": {
+        "name": "Clissold Park",
+        "lat": 51.561,
+        "lng": -0.0883
+    },
+    "CLPH": {
+        "name": "Clapham Common",
+        "lat": 51.4616,
+        "lng": -0.1388
+    },
+    "CMBG": {
+        "name": "Cambridge Gardens",
+        "lat": 51.5058,
+        "lng": -0.1936
+    },
+    "COTP": {
+        "name": "Cottenham Park",
+        "lat": 51.4143,
+        "lng": -0.2361
+    },
+    "DLPK": {
+        "name": "Dulwich Park",
+        "lat": 51.4456,
+        "lng": -0.0877
+    },
+    "EBRK": {
+        "name": "Eel Brook Common",
+        "lat": 51.5607,
+        "lng": -0.2844
+    },
+    "EHP": {
+        "name": "Emslie Horniman Pleasance",
+        "lat": 51.5322,
+        "lng": -0.2455
+    },
+    "FINS": {
+        "name": "Finsbury Park",
+        "lat": 51.5558,
+        "lng": -0.1042
+    },
+    "GLDH": {
+        "name": "Golders Hill Park",
+        "lat": 51.554,
+        "lng": -0.1954
+    },
+    "GMHM": {
+        "name": "Geraldine Mary Harmsworth Park",
+        "lat": 51.5627,
+        "lng": -0.2392
+    },
+    "GRNW": {
+        "name": "Greenwich Park",
+        "lat": 51.4769,
+        "lng": -0.0005
+    },
+    "GUNN": {
+        "name": "Gunnersbury Park Sports Hub",
+        "lat": 51.505,
+        "lng": -0.3191
+    },
+    "HBYF": {
+        "name": "Highbury Fields",
+        "lat": 51.5488,
+        "lng": -0.1035
+    },
+    "HIGM": {
+        "name": "Higham Hill Park",
+        "lat": 51.5871,
+        "lng": -0.0358
+    },
+    "HILL": {
+        "name": "Hillside Gardens Park",
+        "lat": 51.5048,
+        "lng": -0.0671
+    },
+    "HILY": {
+        "name": "Hilly Fields",
+        "lat": 51.4708,
+        "lng": -0.0492
+    },
+    "HKYD": {
+        "name": "Hackney Downs Park",
+        "lat": 51.5402,
+        "lng": -0.0562
+    },
+    "HOLP": {
+        "name": "Holland Park",
+        "lat": 51.503,
+        "lng": -0.203
+    },
+    "HONO": {
+        "name": "Honor Oak Recreation Ground",
+        "lat": 51.4463,
+        "lng": -0.103
+    },
+    "HURP": {
+        "name": "Hurlingham Park",
+        "lat": 51.488,
+        "lng": -0.201
+    },
+    "HYDE": {
+        "name": "Hyde Park",
+        "lat": 51.5073,
+        "lng": -0.1657
+    },
+    "ISLT": {
+        "name": "Islington Tennis Centre",
+        "lat": 51.5407,
+        "lng": -0.1018
+    },
+    "JWGD": {
+        "name": "Joe White Gardens",
+        "lat": 51.578,
+        "lng": -0.1005
+    },
+    "KIDB": {
+        "name": "Kidbrooke Green",
+        "lat": 51.438,
+        "lng": 0.009
+    },
+    "KILB": {
+        "name": "Kilburn Grange",
+        "lat": 51.536,
+        "lng": -0.207
+    },
+    "KMMP": {
+        "name": "Kensington Memorial Park",
+        "lat": 51.5148,
+        "lng": -0.1888
+    },
+    "KNGF": {
+        "name": "King's Field",
+        "lat": 51.38,
+        "lng": -0.275
+    },
+    "KNGR": {
+        "name": "King George's Field",
+        "lat": 51.4644,
+        "lng": -0.313
+    },
+    "KNLE": {
+        "name": "Kneller Gardens",
+        "lat": 51.4812,
+        "lng": -0.018
+    },
+    "KNNG": {
+        "name": "Kennington Park",
+        "lat": 51.4807,
+        "lng": -0.108
+    },
+    "LADY": {
+        "name": "Ladywell Fields",
+        "lat": 51.45,
+        "lng": -0.067
+    },
+    "LAMP": {
+        "name": "Lammas Park",
+        "lat": 51.485,
+        "lng": -0.011
+    },
+    "LARK": {
+        "name": "Larkhall Park",
+        "lat": 51.502,
+        "lng": -0.231
+    },
+    "LEEV": {
+        "name": "Lee Valley",
+        "lat": 51.575,
+        "lng": 0.05
+    },
+    "LINC": {
+        "name": "Lincoln's Inn Fields",
+        "lat": 51.5162,
+        "lng": -0.1168
+    },
+    "LINF": {
+        "name": "Linford Christie Stadium",
+        "lat": 51.501,
+        "lng": -0.045
+    },
+    "LLYD": {
+        "name": "Lloyd Park",
+        "lat": 51.58,
+        "lng": -0.217
+    },
+    "MANH": {
+        "name": "Manor House Gardens",
+        "lat": 51.561,
+        "lng": -0.101
+    },
+    "MAYO": {
+        "name": "Mayow Park",
+        "lat": 51.558,
+        "lng": -0.053
+    },
+    "MLFP": {
+        "name": "Millfields Park",
+        "lat": 51.573,
+        "lng": -0.119
+    },
+    "MOOR": {
+        "name": "Moor Mead Recreation Ground",
+        "lat": 51.408,
+        "lng": -0.157
+    },
+    "MYAT": {
+        "name": "Myatts Fields Park",
+        "lat": 51.4705,
+        "lng": -0.075
+    },
+    "NAPF": {
+        "name": "North Acton Playing Fields",
+        "lat": 51.517,
+        "lng": -0.275
+    },
+    "NRLE": {
+        "name": "New River Leisure Centre",
+        "lat": 51.557,
+        "lng": -0.077
+    },
+    "OLD": {
+        "name": "Old Deer Park",
+        "lat": 51.493,
+        "lng": -0.213
+    },
+    "PALE": {
+        "name": "Palewell Common",
+        "lat": 51.4,
+        "lng": -0.102
+    },
+    "PITP": {
+        "name": "Pitshanger Park",
+        "lat": 51.566,
+        "lng": -0.396
+    },
+    "PLHF": {
+        "name": "Parliament Hill Fields",
+        "lat": 51.556,
+        "lng": -0.208
+    },
+    "QPAR": {
+        "name": "Queens Park",
+        "lat": 51.51,
+        "lng": -0.225
+    },
+    "RDWY": {
+        "name": "Ridgeway Park",
+        "lat": 51.579,
+        "lng": 0.025
+    },
+    "RGTS": {
+        "name": "Regent's Park",
+        "lat": 51.529,
+        "lng": -0.155
+    },
+    "RMYG": {
+        "name": "Rosemary Gardens",
+        "lat": 51.481,
+        "lng": -0.071
+    },
+    "RUSK": {
+        "name": "Ruskin Park",
+        "lat": 51.482,
+        "lng": -0.121
+    },
+    "RVCP": {
+        "name": "Ravenscourt Park",
+        "lat": 51.483,
+        "lng": -0.231
+    },
+    "SFRG": {
+        "name": "Southfield Recreation Ground",
+        "lat": 51.565,
+        "lng": -0.22
+    },
+    "SHEE": {
+        "name": "Sheen Common",
+        "lat": 51.464,
+        "lng": -0.302
+    },
+    "STHL": {
+        "name": "Southall Park",
+        "lat": 51.513,
+        "lng": -0.37
+    },
+    "STHP": {
+        "name": "Southwark Park",
+        "lat": 51.504,
+        "lng": -0.069
+    },
+    "SWPK": {
+        "name": "South Park",
+        "lat": 51.4647,
+        "lng": -0.0987
+    },
+    "SYDW": {
+        "name": "Sydenham Well Park",
+        "lat": 51.424,
+        "lng": -0.051
+    },
+    "TAMW": {
+        "name": "Tamworth Recreation Ground",
+        "lat": 51.524,
+        "lng": 0.054
+    },
+    "TANP": {
+        "name": "Tanner Street Park",
+        "lat": 51.5001,
+        "lng": -0.0804
+    },
+    "TELE": {
+        "name": "Telegraph Hill",
+        "lat": 51.459,
+        "lng": -0.073
+    },
+    "TUFN": {
+        "name": "Tufnell Park Tennis",
+        "lat": 51.57,
+        "lng": -0.127
+    },
+    "VXHL": {
+        "name": "Vauxhall Park",
+        "lat": 51.486,
+        "lng": -0.121
+    },
+    "WATR": {
+        "name": "Waterlow Park",
+        "lat": 51.597,
+        "lng": -0.127
+    },
+    "WESL": {
+        "name": "Westerly Ware",
+        "lat": 51.398,
+        "lng": -0.092
+    },
+    "WHPK": {
+        "name": "West Ham Park",
+        "lat": 51.532,
+        "lng": 0.008
+    },
+    "WMBD": {
+        "name": "Wimbledon Park",
+        "lat": 51.422,
+        "lng": -0.206
+    },
+    "YRKH": {
+        "name": "York House Gardens",
+        "lat": 51.541,
+        "lng": -0.175
+    }
+}
