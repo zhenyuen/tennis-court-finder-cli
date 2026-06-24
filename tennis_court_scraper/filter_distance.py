@@ -22,11 +22,12 @@ def filter_by_distance(
     venues = load_venues()
     result: list[Slot] = []
     for slot in slots:
-        venue = venues.get(slot.venue_id)
-        if not venue:
-            slot.venue_name = f"Unknown ({slot.venue_id})"
+        vid = slot.venue_id
+        if vid not in venues:
+            slot.venue_name = f"Unknown ({vid})"
             result.append(slot)
             continue
+        venue = venues[vid]
         slot.venue_name = str(venue["name"])
         vlat, vlng = float(venue["lat"]), float(venue["lng"])
         dists = [_haversine(clat, clng, vlat, vlng) for clat, clng in centers]

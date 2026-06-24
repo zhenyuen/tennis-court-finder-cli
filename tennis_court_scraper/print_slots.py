@@ -1,3 +1,4 @@
+from collections import defaultdict
 from datetime import datetime
 
 from tennis_court_scraper.models import Slot
@@ -7,9 +8,9 @@ def print_slots(slots: list[Slot]) -> None:
     if not slots:
         print("No matching courts found.")
         return
-    grouped: dict[str, list[Slot]] = {}
+    grouped: defaultdict[str, list[Slot]] = defaultdict(list)
     for slot in slots:
-        grouped.setdefault(slot.date, []).append(slot)
+        grouped[slot.date].append(slot)
     total = 0
     for date_str in sorted(grouped):
         day_slots = grouped[date_str]
