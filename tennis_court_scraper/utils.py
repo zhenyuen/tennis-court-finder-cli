@@ -42,7 +42,8 @@ def print_slots(slots: list[Slot]) -> None:
             price_str = f"[bold]£{slot.price:.2f}[/bold]" if slot.price is not None else "[dim]Free[/dim]"
             outdoor_str = "outdoor" if slot.outdoor else "indoor"
             lit_str = "[green]lit[/green]" if slot.lit else "no lit"
+            size_str = "[bold]full[/bold]" if slot.full_size else "half"
             url_str = f" [dim][link={slot.booking_url}][slot.booking_url][/link][/dim]" if slot.booking_url else ""
-            console.print(f"  [cyan]{slot.venue_name}[/cyan] ({slot.venue_id}) [dim]{slot.court_name}[/dim]  {time_str}  {outdoor_str}  {lit_str:<6s}  {price_str}  {slot.distance_km}km{url_str}")
+            console.print(f"  [cyan]{slot.venue_name}[/cyan] ({slot.venue_id}) [dim]{slot.court_name}[/dim]  {time_str}  {outdoor_str}  {size_str:<5s}  {lit_str:<6s}  {price_str}  {slot.distance_km}km{url_str}")
             total += 1
     console.print(f"\n[dim]Total: {total} courts found[/dim]")
