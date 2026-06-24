@@ -6,6 +6,8 @@
 - **Avoid `dict.get`** — Use direct access `d[key]` with `in` checks instead of `d.get(key)`. Only use `.get()` when the default value is meaningful and non-trivial.
 - **Keep code simple** — Prioritize readability and minimalism. Avoid over-engineering.
 - **Only use absolute imports** — Always import from the top-level package (e.g., `from tennis_court_scraper.models import Slot`). Never use relative imports (`from .models import Slot`) or inline `sys.path` manipulation.
+- **Never import private modules** — Only import from public modules exposed via `__all__`. Never import from modules prefixed with `_` (e.g., `_internal`) or access private names like `_helper_func`. Always use the public API surface defined in `__init__.py` files.
+- **Always define `__all__` in `__init__.py`** — Every `__init__.py` must declare `__all__` to explicitly control its public API. Never define `__all__` in regular module files.
 - **No magic numbers** — Use named constants. Internal constants prefixed with `_`.
 - **No f-strings in logging** — Use `%` formatting or `.format()` in `print`/log statements. F-strings evaluate eagerly, wasting CPU when the log level is disabled.
 - **Never test private methods** — Private functions (prefixed with `_`) are implementation details. Test only public functions through their public interface.

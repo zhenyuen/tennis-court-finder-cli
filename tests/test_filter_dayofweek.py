@@ -1,4 +1,4 @@
-from tennis_court_scraper.filter_dayofweek import filter_by_day_of_week
+from tennis_court_scraper.filters import filter_by_day_of_week
 from tennis_court_scraper.models import Slot
 
 

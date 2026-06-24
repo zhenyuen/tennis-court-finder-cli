@@ -1,4 +1,4 @@
-from tennis_court_scraper.filter_distance import filter_by_distance
+from tennis_court_scraper.filters import filter_by_distance
 from tennis_court_scraper.models import Slot
 
 

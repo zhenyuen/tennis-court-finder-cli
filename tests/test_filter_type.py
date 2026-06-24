@@ -1,4 +1,4 @@
-from tennis_court_scraper.filter_type import filter_by_type
+from tennis_court_scraper.filters import filter_by_type
 from tennis_court_scraper.models import Slot
 
 

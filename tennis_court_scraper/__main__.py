@@ -1,5 +1,6 @@
 import argparse
 import asyncio
+import logging
 import sys
 
 import aiohttp
@@ -12,14 +13,17 @@ from tennis_court_scraper.config import (
     DEFAULT_START_HOUR,
 )
 from tennis_court_scraper.fetch import fetch_html
-from tennis_court_scraper.filter_dayofweek import filter_by_day_of_week
-from tennis_court_scraper.filter_distance import filter_by_distance
-from tennis_court_scraper.filter_time import filter_by_time
-from tennis_court_scraper.filter_type import filter_by_type
+from tennis_court_scraper.filters import (
+    filter_by_day_of_week,
+    filter_by_distance,
+    filter_by_time,
+    filter_by_type,
+)
 from tennis_court_scraper.parse import parse_slots
 from tennis_court_scraper.utils import print_slots, sort_slots
 
 COURTFINDER_MAX_DAYS_AHEAD = 9
+logger = logging.getLogger(__name__)
 
 
 def _parse_center(value: str) -> tuple[float, float]:
@@ -97,16 +101,15 @@ async def run() -> None:
     parser = _build_parser()
     args = parser.parse_args()
     if args.days_ahead > COURTFINDER_MAX_DAYS_AHEAD:
-        print(
-            "Warning: courtfinder.app only provides %s days of data ahead"
-            % COURTFINDER_MAX_DAYS_AHEAD,
-            file=sys.stderr,
+        logger.warning(
+            "courtfinder.app only provides %s days of data ahead",
+            COURTFINDER_MAX_DAYS_AHEAD,
         )
     centers = [_parse_center(c) for c in args.center]
     try:
         html = await fetch_html()
     except aiohttp.ClientError as e:
-        print("Error fetching data: %s" % e, file=sys.stderr)
+        logger.error("Error fetching data: %s", e)
         sys.exit(1)
     slots = parse_slots(html)
     slots = filter_by_distance(slots, centers, args.radius)
@@ -120,6 +123,11 @@ async def run() -> None:
 
 
 def main() -> None:
+    logging.basicConfig(
+        level=logging.WARNING,
+        format="%(levelname)s: %(message)s",
+        stream=sys.stderr,
+    )
     asyncio.run(run())
 
 
