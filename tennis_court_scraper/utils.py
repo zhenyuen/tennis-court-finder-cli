@@ -53,7 +53,7 @@ def print_slots(slots: list[Slot]) -> None:
         table.add_column("Size")
         table.add_column("Light")
         table.add_column("Price")
-        table.add_column("Dist")
+        table.add_column("Max Dist (Angel/CW)")
         table.add_column("URL")
 
         for slot in day_slots:
